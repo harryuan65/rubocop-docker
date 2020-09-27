@@ -1,4 +1,5 @@
 FROM ruby:2.6.6-alpine
+MAINTAINER harryuan65
 WORKDIR /app
 VOLUME /app
 RUN gem install rubocop -v 0.92.0
