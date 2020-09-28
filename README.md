@@ -3,5 +3,5 @@
 ## Use anywhere
 `docker run --rm -v "$PWD:/app" lint`
 
-## image
+## Pull Image
 harryuan65/rubocop-docker:latest
