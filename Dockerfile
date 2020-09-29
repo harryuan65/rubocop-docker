@@ -3,6 +3,7 @@ MAINTAINER harryuan65
 WORKDIR /app
 VOLUME /app
 RUN gem install rubocop -v 0.92.0
+RUN gem install rubocop-rails
 RUN ruby -e "puts 1+3"
 RUN gem list
 COPY entrypoint.sh /entrypoint.sh
