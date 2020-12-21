@@ -1,11 +1,11 @@
 # How it works
-Temporarily add you project's pwd to /app, which is a volume dir in the container, and then it will run `rubocop` inside it.  
+Temporarily add your project's pwd to `/app`, which is a volume dir in the container, and then it will run `rubocop` inside it.  
 
 # Pull Image
 `harryuan65/rubocop-docker:latest`
 
 # Usage
-## CI Stage
+## For CI Stage
 1. specify image: harryuan65/rubocop-docker
 2. stage run command `rubocop`
 3. done.
