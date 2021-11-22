@@ -18,7 +18,17 @@ Temporarily add your project's pwd to `/app`, which is a volume dir in the conta
 
 ### Build image Locally
 
-`docker build -t lint .`
+## Intel Mac
+
+```bash
+docker build . -t lint
+```
+
+## M1 Mac
+
+```bash
+ docker build --platform linux/amd64 . -t lint
+```
 
 ### Lint your project
 
