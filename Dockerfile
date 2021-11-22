@@ -1,8 +1,8 @@
-FROM ruby:2.6.6-alpine
-MAINTAINER harryuan65
+FROM ruby:3.0.2-alpine
+LABEL org.opencontainers.image.authors="harryuan65@gmail.com"
 WORKDIR /app
 VOLUME /app
-RUN gem install rubocop -v 0.92.0
+RUN gem install rubocop -v 1.22.2
 RUN gem install rubocop-rails
 RUN ruby -e "puts 1+3"
 RUN gem list
