@@ -27,7 +27,7 @@ docker build . -t lint
 ## M1 Mac
 
 ```bash
- docker build --platform linux/amd64 . -t lint
+docker build --platform linux/amd64 . -t lint
 ```
 
 ### Lint your project
