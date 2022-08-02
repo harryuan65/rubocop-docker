@@ -1,36 +1,38 @@
-# How it works
+# Rubocop docker
+
+## How it works
 
 Temporarily add your project's pwd to `/app`, which is a volume dir in the container, and then it will run `rubocop` inside it.
 
-# Pull Image
+## Pull Image
 
 `harryuan65/rubocop-docker:latest`
 
-# Usage
+## Usage
 
-## For CI Stage
+### For CI Stage
 
 1. specify image: harryuan65/rubocop-docker
 2. stage run command `rubocop`
 3. done.
 
-## For Local Projects
+### For Local Projects
 
-### Build image Locally
+## Build image Locally
 
-## Intel Mac
+### Intel Mac
 
 ```bash
 docker build . -t lint
 ```
 
-## M1 Mac
+### M1 Mac
 
 ```bash
 docker build --platform linux/amd64 . -t lint
 ```
 
-### Lint your project
+## Lint your project
 
 1. pull the image
 2. cd inside your project
