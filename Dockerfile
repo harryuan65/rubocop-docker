@@ -10,5 +10,5 @@ RUN bundle config path vendor/bundle && bundler install --jobs 4
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
-# default mounts target app into /app, will use the rubocop config inside it.
+# By default I expect you to mount target app into /app. Will use the rubocop config inside it.
 CMD [ "/app" ]
