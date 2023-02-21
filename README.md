@@ -2,7 +2,7 @@
 
 ## How it works
 
-Temporarily add your project's pwd to `/app`, which is a volume dir in the container, and then it will run `rubocop` inside it.
+Mount your app at `/app` and run `bundle exec rubocop`.
 
 ## Pull Image
 
